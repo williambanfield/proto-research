@@ -1,0 +1,11 @@
+// awesome.proto
+syntax = "proto3";
+package awesomepackage;
+
+option go_package = "protos";
+
+
+message AwesomeMessage {
+    string awesome_field = 1; // becomes awesomeField
+    bool awesome_bool = 2; // becomes awesomeBool
+}
